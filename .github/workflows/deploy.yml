@@ -31,3 +31,4 @@ jobs:
           NEXT_PUBLIC_HOST: ${{ secrets.NEXT_PUBLIC_HOST }}
           NEXT_PUBLIC_S3URL: ${{ secrets.NEXT_PUBLIC_S3URL }}
           GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
+          NEXT_PUBLIC_SSR_HOST: ${{ secrets.NEXT_PUBLIC_SSR_HOST }}
