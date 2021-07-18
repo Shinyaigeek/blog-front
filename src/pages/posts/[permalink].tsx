@@ -19,7 +19,6 @@ const getPostByPermalink = async (permalink = ''): Promise<PostRes> =>
 export async function getServerSideProps(context: NextPageContext) {
   const {permalink} = context.query
   const response: PostRes = await getPostByPermalink(typeof permalink === "string"? permalink : '')
-
   return {
     props: {
       post: response.post

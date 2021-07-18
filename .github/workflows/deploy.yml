@@ -24,8 +24,9 @@ jobs:
           SSH_PORT: ${{ secrets.SSH_PORT }}
       - name: Deploy
         run: |
-          docker-compose -f docker-compose.prod.yml --context remote stop
-          docker-compose -f docker-compose.prod.yml --context remote up --build -d
+          sh env.sh
+          docker-compose -f docker-compose.prod.yml --context remote build
+          docker-compose -f docker-compose.prod.yml --context remote up -d
         env:
           COMPOSE_HTTP_TIMEOUT: 1200
           NEXT_PUBLIC_HOST: ${{ secrets.NEXT_PUBLIC_HOST }}
