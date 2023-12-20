@@ -28,7 +28,7 @@
     "marked": "^2.0.0",
     "material-ui-chip-input": "^2.0.0-beta.2",
     "next": "10.1.4-canary.18",
-    "postcss": "^7",
+    "postcss": "^8",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-dropzone-s3-uploader": "^1.1.0",
